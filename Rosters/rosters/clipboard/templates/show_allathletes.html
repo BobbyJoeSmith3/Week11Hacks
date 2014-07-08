@@ -1,0 +1,22 @@
+<!-- ================================
+Project: Rosters
+App: clipboard
+Doc: show_allathletes.html
+================================ -->
+
+<html>
+
+<head>
+	<title> All Coaches - Rosters </title>
+
+</head>
+
+<body>
+<!-- Create a forloop that lists all of the coaches and their position -->
+These are the coaches:
+{% for athlete in all_athletes  %}
+	<div><a href="">{{ athlete.first_name}} {{ athlete.last_name }} | {{ athlete.position }} | #{{ athlete.number }}</a></div>
+{% endfor %}
+</body>
+
+</html>

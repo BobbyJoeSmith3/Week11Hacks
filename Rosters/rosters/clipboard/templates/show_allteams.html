@@ -1,0 +1,22 @@
+<!-- ================================
+Project: Rosters
+App: clipboard
+Doc: show_allteams.html
+================================= -->
+
+<html>
+
+<head>
+	<title> All Teams - Rosters </title>
+
+</head>
+
+<body>
+<!-- Create a forloop that lists all of the teams and their mascots -->
+These are the teams:
+{% for team in all_teams  %}
+	<div><a href="{% url 'teamView' team.id %}">{{ team.team_name}} {{ team.mascot }}</a></div>
+{% endfor %}
+</body>
+
+</html>
